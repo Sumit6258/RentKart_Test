@@ -20,10 +20,9 @@ class User(db.Model):
     #Added validation for Phone Number
     @validates("contact_number")
     def validate_contact_number(self, key, number):
-        if not re.fullmatch(r'\d{10}",number):
-                            raise ValueError("Contact number must be exactly 10 digits")
+        if not number.isdigit() or len(number) != 10:
+            raise ValueError("Contact number must be exactly 10  digits")
         return number
-        
 
     def __repr__(self):
         return f"<User {self.name}>"
