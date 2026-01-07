@@ -1,0 +1,7 @@
+Rentkart:
+
+1. User: which will be the admins of Rentkart
+2. Customer: all frontend
+3. Category: CRUD, Categories- Home, Kitchen appliances, vehicle
+4. Product: productid, categoryid, photo_1,photo_2, subscription type- monthly, weekly, quaterly
+5. Subscribe: Customer, Product id, start date, end date, cost, payment status
